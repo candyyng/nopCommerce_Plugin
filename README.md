@@ -15,7 +15,7 @@ Prerequisites
 Documentation
 -------------
 
-* [Getting Started](https://github.com/MOLPay/Magento_Plugin/wiki#getting-started) - Everything you need to begin using this plugins.
+* [Getting Started](https://github.com/MOLPay/nopCommerce_Plugin/wiki) - Everything you need to begin using this plugins.
 
 General documentation regarding the MOLPay API and related payment flows can be found on the MOLPay Merchant Admin Site.
 
