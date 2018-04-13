@@ -9,6 +9,7 @@ The nopCommerce Plugin makes it easy to add MOLPay payment gateway to your nopCo
 Prerequisites
 -------------
 
+* nopCommerce 4.00
 * MOLPay Production or Development [account](http://www.molpay.com/v3/contact/merchant-enquiry).
 
 Plugin Releases
