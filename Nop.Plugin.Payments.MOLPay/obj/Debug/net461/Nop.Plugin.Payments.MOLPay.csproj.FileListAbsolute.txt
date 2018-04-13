@@ -1,0 +1,14 @@
+C:\DL\nopCommerce_4.00_Source\Presentation\Nop.Web\Plugins\Payments.MOLPay\plugin.json
+C:\DL\nopCommerce_4.00_Source\Presentation\Nop.Web\Plugins\Payments.MOLPay\Views\Configure.cshtml
+C:\DL\nopCommerce_4.00_Source\Presentation\Nop.Web\Plugins\Payments.MOLPay\Views\PaymentInfo.cshtml
+C:\DL\nopCommerce_4.00_Source\Presentation\Nop.Web\Plugins\Payments.MOLPay\Views\_ViewImports.cshtml
+C:\DL\nopCommerce_4.00_Source\Presentation\Nop.Web\Plugins\Payments.MOLPay\logo.jpg
+C:\DL\nopCommerce_4.00_Source\Presentation\Nop.Web\Plugins\Payments.MOLPay\Nop.Plugin.Payments.MOLPay.dll
+C:\DL\nopCommerce_4.00_Source\Presentation\Nop.Web\Plugins\Payments.MOLPay\Nop.Plugin.Payments.MOLPay.pdb
+C:\DL\nopCommerce_4.00_Source\Plugins\Nop.Plugin.Payments.MOLPay\obj\Debug\net461\Nop.Plugin.Payments.MOLPay.csproj.CoreCompileInputs.cache
+C:\DL\nopCommerce_4.00_Source\Plugins\Nop.Plugin.Payments.MOLPay\obj\Debug\net461\Nop.Plugin.Payments.MOLPay.AssemblyInfoInputs.cache
+C:\DL\nopCommerce_4.00_Source\Plugins\Nop.Plugin.Payments.MOLPay\obj\Debug\net461\Nop.Plugin.Payments.MOLPay.AssemblyInfo.cs
+C:\DL\nopCommerce_4.00_Source\Plugins\Nop.Plugin.Payments.MOLPay\obj\Debug\net461\Nop.Plugin.Payments.MOLPay.csproj.CopyComplete
+C:\DL\nopCommerce_4.00_Source\Plugins\Nop.Plugin.Payments.MOLPay\obj\Debug\net461\Nop.Plugin.Payments.MOLPay.dll
+C:\DL\nopCommerce_4.00_Source\Plugins\Nop.Plugin.Payments.MOLPay\obj\Debug\net461\Nop.Plugin.Payments.MOLPay.pdb
+C:\DL\nopCommerce_4.00_Source\Plugins\Nop.Plugin.Payments.MOLPay\obj\Debug\net461\Nop.Plugin.Payments.MOLPay.csprojResolveAssemblyReference.cache

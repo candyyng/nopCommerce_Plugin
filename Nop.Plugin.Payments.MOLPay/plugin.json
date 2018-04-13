@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "MOLPay",
+  "SystemName": "Payments.MOLPay",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.00" ],
+  "Author": "MOLPay Team",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.MOLPay.dll",
+  "Description": "This plugin allows paying with MOLPay"
+}

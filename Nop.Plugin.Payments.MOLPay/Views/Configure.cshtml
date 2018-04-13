@@ -1,0 +1,117 @@
+﻿@model Nop.Plugin.Payments.MOLPay.Models.ConfigurationModel
+@inject Nop.Core.IWebHelper webHelper
+@{
+    Layout = "_ConfigurePlugin";
+}
+
+@await Component.InvokeAsync("StoreScopeConfiguration")
+
+<script type="text/javascript">
+	$(document).ready(function () {
+        $("#@Html.IdFor(model => model.PassProductNamesAndTotals)").click(togglePassProductNamesAndTotals);
+	    togglePassProductNamesAndTotals();
+	});
+
+    function togglePassProductNamesAndTotals() {
+        warningValidation('@Url.Action("RoundingWarning", "PaymentMOLPay")', '@Html.NameFor(model => model.PassProductNamesAndTotals)',
+            { passProductNamesAndTotals: $('#@Html.IdFor(model => model.PassProductNamesAndTotals)').is(':checked') });
+    }
+</script>
+
+<form asp-controller="PaymentMOLPay" asp-action="Configure" method="post">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @Html.Raw(T("Plugins.Payments.MOLPay.Instructions", $"{webHelper.GetStoreLocation()}Plugins/PaymentMOLPay/PDTHandler"))
+
+                <div class="form-group">
+
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <nop-override-store-checkbox asp-for="UseSandbox_OverrideForStore" asp-input="UseSandbox" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                            <nop-label asp-for="UseSandbox" />
+                        </div>
+                        <div class="col-md-9">
+                            <nop-editor asp-for="UseSandbox" />
+                            <span asp-validation-for="UseSandbox"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="MerchantID_OverrideForStore" asp-input="MerchantID" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="MerchantID" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="MerchantID" asp-required="true" />
+                        <span asp-validation-for="MerchantID"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="VerifyKey_OverrideForStore" asp-input="VerifyKey" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="VerifyKey" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="VerifyKey" asp-required="true" />
+                        <span asp-validation-for="VerifyKey"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="SecretKey_OverrideForStore" asp-input="SecretKey" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="SecretKey" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="SecretKey" asp-required="true" />
+                        <span asp-validation-for="SecretKey"></span>
+                    </div>
+                </div>
+
+                <br/>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <center><b>Payment status</b></center>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="CapturedModeId" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-select asp-for="CapturedModeId" asp-items="Model.CapturedModes" />
+                        <span asp-validation-for="CapturedModeId"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="FailedModeId" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-select asp-for="FailedModeId" asp-items="Model.FailedModes" />
+                        <span asp-validation-for="FailedModeId"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="PendingModeId" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-select asp-for="PendingModeId" asp-items="Model.PendingModes" />
+                        <span asp-validation-for="PendingModeId"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit" name="save" class="btn bg-primary" value="@T("Admin.Common.Save")" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
