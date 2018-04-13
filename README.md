@@ -12,6 +12,15 @@ Prerequisites
 * nopCommerce 4.00
 * MOLPay Production or Development [account](http://www.molpay.com/v3/contact/merchant-enquiry).
 
+Documentation
+-------------
+
+* [Getting Started](https://github.com/MOLPay/Magento_Plugin/wiki#getting-started) - Everything you need to begin using this plugins.
+
+General documentation regarding the MOLPay API and related payment flows can be found on the MOLPay Merchant Admin Site.
+
+**Disclaimer : Any amendment by your end is at your own risk.**
+
 Plugin Releases
 ---------------
 **Normal Integration**
